@@ -1,0 +1,8 @@
+{
+  "request": "teste",
+  "error": "Falha do LLM: ConnectionError: sem rede",
+  "iterations": 1,
+  "max_iterations": 4,
+  "status": "failed",
+  "history": []
+}

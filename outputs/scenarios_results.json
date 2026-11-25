@@ -1,0 +1,65 @@
+[
+  {
+    "scenario": "S1_continua_qualitativa",
+    "expected_rule": "R1",
+    "status": "success",
+    "iterations": 2,
+    "first_audit_approved": false,
+    "first_audit_rules": [
+      "R1"
+    ],
+    "figure": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_caf48a45.png",
+    "log": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\logs\\S1_continua_qualitativa_20261125_210513.json",
+    "error": ""
+  },
+  {
+    "scenario": "S2_nominal_sequencial",
+    "expected_rule": "R2",
+    "status": "success",
+    "iterations": 2,
+    "first_audit_approved": false,
+    "first_audit_rules": [
+      "R2"
+    ],
+    "figure": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_32f91a58.png",
+    "log": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\logs\\S2_nominal_sequencial_20261125_210519.json",
+    "error": ""
+  },
+  {
+    "scenario": "S3_divergente_sem_centro",
+    "expected_rule": "R4",
+    "status": "success",
+    "iterations": 2,
+    "first_audit_approved": false,
+    "first_audit_rules": [
+      "R4"
+    ],
+    "figure": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_c3527ae3.png",
+    "log": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\logs\\S3_divergente_sem_centro_20261125_210656.json",
+    "error": ""
+  },
+  {
+    "scenario": "S4_arco_iris",
+    "expected_rule": "R5",
+    "status": "success",
+    "iterations": 2,
+    "first_audit_approved": false,
+    "first_audit_rules": [
+      "R5"
+    ],
+    "figure": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_fc39af90.png",
+    "log": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\logs\\S4_arco_iris_20261125_210715.json",
+    "error": ""
+  },
+  {
+    "scenario": "S5_pedido_valido",
+    "expected_rule": "-",
+    "status": "success",
+    "iterations": 1,
+    "first_audit_approved": true,
+    "first_audit_rules": [],
+    "figure": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_3f0d5d92.png",
+    "log": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\logs\\S5_pedido_valido_20261125_210719.json",
+    "error": ""
+  }
+]

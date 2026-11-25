@@ -1,0 +1,30 @@
+{
+  "request": "Scatter de PIB per capita vs esperança de vida em 2007, cor por continente, tamanho por população.",
+  "code": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom src.palettes import QUALITATIVE\n\n# Carregar dados\ndf = pd.read_csv(\"data/gapminder_clean.csv\")\n\n# Filtrar para o ano de 2007\ndf_2007 = df[df['year'] == 2007].copy()\n\n# Configuração do gráfico\nsns.set_theme(style=\"whitegrid\")\nfig, ax = plt.subplots(figsize=(10, 6))\n\n# Scatter plot\n# Tamanho da população normalizado para área (s)\nscatter = sns.scatterplot(\n    data=df_2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    hue=\"continent\",\n    size=\"pop\",\n    sizes=(20, 500),\n    palette=QUALITATIVE,\n    alpha=0.7,\n    edgecolor=\"black\",\n    linewidth=0.5,\n    ax=ax\n)\n\n# Escalas e eixos\nax.set_xscale(\"log\")\nax.set_xlabel(\"PIB per capita (USD, escala log)\")\nax.set_ylabel(\"Esperança média de vida (anos)\")\nax.set_title(\"PIB per capita vs Esperança de Vida (2007)\")\n\n# Ajuste da legenda\nhandles, labels = ax.get_legend_handles_labels()\n# Remover o título da legenda de tamanho para limpeza visual\nax.legend(handles, labels, title=\"Continente / População\", bbox_to_anchor=(1.05, 1), loc='upper left')\n\nplt.savefig(OUTPUT_PATH, bbox_inches=\"tight\", dpi=200)",
+  "audit": {
+    "approved": true,
+    "findings": []
+  },
+  "feedback": "",
+  "error": "",
+  "iterations": 1,
+  "max_iterations": 4,
+  "figure_path": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\figures\\fig_b4164b73.png",
+  "status": "success",
+  "history": [
+    {
+      "iteration": 1,
+      "stage": "audit",
+      "approved": true,
+      "findings": [],
+      "code": "import pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom src.palettes import QUALITATIVE\n\n# Carregar dados\ndf = pd.read_csv(\"data/gapminder_clean.csv\")\n\n# Filtrar para o ano de 2007\ndf_2007 = df[df['year'] == 2007].copy()\n\n# Configuração do gráfico\nsns.set_theme(style=\"whitegrid\")\nfig, ax = plt.subplots(figsize=(10, 6))\n\n# Scatter plot\n# Tamanho da população normalizado para área (s)\nscatter = sns.scatterplot(\n    data=df_2007,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    hue=\"continent\",\n    size=\"pop\",\n    sizes=(20, 500),\n    palette=QUALITATIVE,\n    alpha=0.7,\n    edgecolor=\"black\",\n    linewidth=0.5,\n    ax=ax\n)\n\n# Escalas e eixos\nax.set_xscale(\"log\")\nax.set_xlabel(\"PIB per capita (USD, escala log)\")\nax.set_ylabel(\"Esperança média de vida (anos)\")\nax.set_title(\"PIB per capita vs Esperança de Vida (2007)\")\n\n# Ajuste da legenda\nhandles, labels = ax.get_legend_handles_labels()\n# Remover o título da legenda de tamanho para limpeza visual\nax.legend(handles, labels, title=\"Continente / População\", bbox_to_anchor=(1.05, 1), loc='upper left')\n\nplt.savefig(OUTPUT_PATH, bbox_inches=\"tight\", dpi=200)"
+    },
+    {
+      "iteration": 1,
+      "stage": "execute",
+      "ok": true,
+      "error": "",
+      "script": "C:\\Users\\joelo\\Documents\\GitHub\\Visualizacao_Dados\\outputs\\generated\\fig_b4164b73.py"
+    }
+  ]
+}

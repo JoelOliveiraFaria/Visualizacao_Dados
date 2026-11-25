@@ -1,0 +1,8 @@
+{
+  "request": "Scatter de PIB per capita vs esperança de vida em 2007, cor por continente, tamanho por população.",
+  "error": "Falha do LLM: GoogleAPIError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
+  "iterations": 1,
+  "max_iterations": 4,
+  "status": "failed",
+  "history": []
+}
