@@ -1,0 +1,89 @@
+{
+  "country": {
+    "nature": "categorical_nominal",
+    "description": "País",
+    "dtype": "category",
+    "cardinality": 142,
+    "n_missing": 0,
+    "levels_sample": [
+      "Afghanistan",
+      "Albania",
+      "Algeria",
+      "Angola",
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Bahrain",
+      "Bangladesh",
+      "Belgium"
+    ]
+  },
+  "continent": {
+    "nature": "categorical_nominal",
+    "description": "Continente",
+    "dtype": "category",
+    "cardinality": 5,
+    "n_missing": 0,
+    "levels_sample": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "Americas",
+      "Oceania"
+    ]
+  },
+  "year": {
+    "nature": "ordinal_temporal",
+    "description": "Ano (de 5 em 5 anos, 1952-2007)",
+    "dtype": "int64",
+    "cardinality": 12,
+    "n_missing": 0,
+    "min": 1952.0,
+    "max": 2007.0,
+    "levels_sample": [
+      "1952",
+      "1957",
+      "1962",
+      "1967",
+      "1972",
+      "1977",
+      "1982",
+      "1987",
+      "1992",
+      "1997"
+    ]
+  },
+  "lifeExp": {
+    "nature": "quantitative_continuous",
+    "description": "Esperança média de vida à nascença (anos)",
+    "dtype": "float64",
+    "cardinality": 1626,
+    "n_missing": 0,
+    "min": 23.599,
+    "max": 82.603,
+    "skew": -0.25,
+    "suggest_log_scale": false
+  },
+  "pop": {
+    "nature": "quantitative_continuous",
+    "description": "População total",
+    "dtype": "int64",
+    "cardinality": 1704,
+    "n_missing": 0,
+    "min": 60011.0,
+    "max": 1318683096.0,
+    "skew": 8.34,
+    "suggest_log_scale": true
+  },
+  "gdpPercap": {
+    "nature": "quantitative_continuous",
+    "description": "PIB per capita (USD, ajustado à inflação)",
+    "dtype": "float64",
+    "cardinality": 1704,
+    "n_missing": 0,
+    "min": 241.1658765,
+    "max": 113523.1329,
+    "skew": 3.85,
+    "suggest_log_scale": true
+  }
+}
